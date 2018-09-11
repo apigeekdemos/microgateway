@@ -22,6 +22,7 @@ edgemicro:
   plugins:
     sequence:
       - cloud-foundry-route-service
+      - cors
       - oauth
       - spikearrest
 spikearrest:
