@@ -1,14 +1,19 @@
 ---
 applications:
-- name: edgemicro-app
+- name: {your-username}-edgemicro-app-lab2
   memory: 512M
+  disk_quota: 512M
   instances: 1
-  host: edgemicro-app
   path: .
   buildpack: nodejs_buildpack
   env: 
-    EDGEMICRO_KEY: 'microgateway-key'
-    EDGEMICRO_SECRET: 'microgateway-secret'
-    EDGEMICRO_CONFIG_DIR: '/app/config'
-    EDGEMICRO_ENV: 'env-name'
-    EDGEMICRO_ORG: 'org-name'
+    # Replace with EDGEMICRO_KEY from Instructions above
+    EDGEMICRO_KEY: 2d99ace69294c8f791404a7dd735a83b4ce08545f9f2da2cb736a7b9019989c5
+    # Replace with EDGEMICRO_SECRET from Instructions above
+    EDGEMICRO_SECRET: b4eb6dea5cb19ca6c784d3345c1630d3698ab2ef8041cf7843d191f3a5d5de66
+    EDGEMICRO_CONFIG_DIR: './config'
+    # Replace EDGEMICRO_ORG with APIGEE_ORG variable from Instructions above
+    EDGEMICRO_ORG: 'amer-api-partner19'
+    # Replace EDGEMICRO_ENV with APIGEE_ENV variable from Instructions above
+    EDGEMICRO_ENV: 'test'
+    NODE_TLS_REJECT_UNAUTHORIZED: 0
