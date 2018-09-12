@@ -25,6 +25,8 @@ edgemicro:
       - cors
       - oauth
       - spikearrest
+cors:
+   cors-origin: '*'
 spikearrest:
    timeUnit: minute
    allow: 10
