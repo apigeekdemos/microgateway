@@ -1,6 +1,7 @@
 ---
 applications:
-- name: {your-username}-edgemicro-app-lab2
+# replace PCF_USERNUM with your 3 digit user number from handout e.g. 149
+- name: PCF_USERNUM-edgemicro-app-lab2
   memory: 512M
   disk_quota: 512M
   instances: 1
